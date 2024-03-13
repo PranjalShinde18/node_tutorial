@@ -1,0 +1,23 @@
+// Before Async await
+
+// const data = req.body;
+
+// const newStudent = new Student(data);
+
+// // newStudent.name = data.name;
+// // newStudent.roll_no = data.roll_no;
+// // newStudent.passing_year = data.passing_year;                // We pass data in new Student(data) instead of this all.
+// // newStudent.mobile_no = data.mobile_no;
+// // newStudent.email = data.email;
+
+// newStudent.save((err, savedStudent) => {
+//     if (err) {
+//         console.log('Error saving data',err);
+//         res.status(500).json({err: 'Internal server Error'})
+//     } else {
+//         console.log('Student added successfully');
+//         req.status(200).json(savedStudent)
+//     }
+// })
+
+// was used.

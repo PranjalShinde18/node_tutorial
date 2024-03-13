@@ -1,0 +1,19 @@
+Start servers = mongod                                                                             ---To Start the server           
+
+Stop servers =  1. use admin    2. db.shutdownServer()                                             ---To Stop the server        
+
+Create database : use db;                                                                          ---Created databasenamed db.
+
+Create collection : db.createCollection("users");                                                  ---Create  collection named "users".
+
+Insert data : db.users.insertOne({id:1,username: 'Pranjal', age : 20});                            ---Insert data with all the user information.
+
+Display data : db.users.find()                                                                     ---Display all the data in collection named "users".
+
+Display specific data : db.users.find({age: {$gt : 25} });                                         ---Display all the data in collection named "users" where age is greater than 25.
+
+Display specific data : db.users.find({age: {$lt : 25} });                                         ---Display all the data in collection named "users" where age is lesser than 25.
+
+Update data : db.users.updateOne({username:'Pranjal'},{ $set: {username:'EternaL'} });             ---Updated the data od user with username as Pranjal, and set its username to EternaL.
+
+Delete data : db.users.deleteOne({ id: 1 });                                                       ---Deleted the data in collection with id as 1.

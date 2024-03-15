@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());  // req.body
 
 require('dotenv').config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 //Get the data.
 app.get('/greeting', function (req, res) { // add /greeting to end of request url to get this method, req = request and res = response
@@ -20,6 +20,6 @@ app.use('/course',courseRoutes);
 
 
 app.listen(PORT, () => {
-    console.log('Server is active on port 3000!')
+    console.log('Server is active!')
 })
 

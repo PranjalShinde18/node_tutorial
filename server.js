@@ -1,8 +1,6 @@
 const express = require('express')   // importing express.
 const app = express();  // generally we use "app" for express but we can use any other name also.
 const db = require('./db');
-const Student = require('./models/Student');
-const Course = require('./models/course');
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());  // req.body
 

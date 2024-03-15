@@ -19,7 +19,7 @@ const courseRoutes = require('./routes/courseRoutes');
 app.use('/course',courseRoutes);
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('Server is active on port 3000!')
 })
 

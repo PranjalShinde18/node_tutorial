@@ -20,7 +20,7 @@ db.on('connected', function () {
 });
 
 db.on('disconnected', function () {
-    console.log('Disconnected from MongoDB');
+    console.log('Disconnected from MongoDB\n');
 });
 
 db.on('error', function (err) {

@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
 
         const response = await newCourse.save();
 
-        console.log('Course data saved successfully');
+        console.log('Course data saved successfully \n');
         res.status(200).json(response);
 
     } catch (err) {
@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
     try {
         const response = await Course.find();
 
-        console.log('Course data fetched successfully');
+        console.log('Course data fetched successfully \n');
         res.status(200).json(response);
 
     } catch (err) {
@@ -46,7 +46,7 @@ router.get('/:duration', async (req, res) => {
         if (duration === "1 Month" || duration === "3 Months" || duration === "6 Months") {
 
             const response = await Course.find({ duration: duration });
-            console.log('Course data fetched successfully');
+            console.log('Course data fetched successfully \n');
             res.status(200).json(response);
         } else {
             console.log('Invalid duration');
